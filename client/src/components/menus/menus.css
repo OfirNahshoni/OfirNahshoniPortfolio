@@ -1,0 +1,28 @@
+.sidebar-profile-img {
+    border-radius: 90px;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    vertical-align: middle;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.sidebar-item {
+    color: white;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.sidebar-link {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.sidebar-link svg {
+    margin-right: 10px;
+}
+
+.sidebar-link:hover {
+    color: #f29f67;
+}
