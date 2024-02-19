@@ -1,17 +1,20 @@
 .sidebar-section {
     display: flex;
+    background-color: black;
 }
 
 .sidebar {
     height: 100vh;
     background-color: #1e1e2c;
     width: 90px;
+    position: fixed;
 }
 
 .sidebar-toggle {
     height: 100vh;
     background-color: #1e1e2c;
-    width: 230px;
+    width: 200px;
+    position: fixed;
 }
 
 .sidebar-toggle-icons {

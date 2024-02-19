@@ -1,6 +1,6 @@
 import React from 'react'
 import './menus.css'
-import profileImg from '../../media/images/profile-img.jpg'
+import ProfileImg from '../../assests/images/me3.jpeg'
 import { FcHome } from "react-icons/fc";
 import { FcAbout } from "react-icons/fc";
 import { FcBusiness } from "react-icons/fc";
@@ -17,8 +17,8 @@ const Menus = ({ toggle }) => {
                 <>
                     <div className='sidebar-profile-img'>
                         <img
-                            src={profileImg}
-                            alt='profile img'
+                            src={ProfileImg}
+                            alt='profile-img'
                         />
                     </div>
 
