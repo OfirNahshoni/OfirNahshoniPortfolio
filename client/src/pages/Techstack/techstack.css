@@ -1,5 +1,5 @@
 .techstack {
-    padding-left: 120px;
+    padding-left: 140px;
     margin-top: 60px 0px;
 }
 
@@ -16,6 +16,8 @@
 
 .techstack .card {
     cursor: pointer;
+    color: #138781;
+    background-color: white;
 }
 
 .techstack .tech-icon {
@@ -29,5 +31,26 @@
         rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     background-color: #138781;
     color: white;
+    transition: 0.7s;
+}
+
+/* DARK MODE */
+
+#dark .techstack h2 {
+    color: #1bada6;
+}
+
+#dark .techstack hr {
+    color: #1bada6;
+}
+
+.techstack .card {
+    color: white;
+    background-color: #138781;
+}
+
+.techstack .card:hover {
+    background-color: white;
+    color: #138781;
     transition: 0.7s;
 }

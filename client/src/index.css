@@ -5,3 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* DARK MODE */
+
+#dark {
+  background-color: #100f26;
+  color: #f4eee0;
+}

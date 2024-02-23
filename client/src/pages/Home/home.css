@@ -50,3 +50,21 @@
 .sidebar-profile-img img {
     border-radius: 30%;
 }
+
+.theme-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    right: 0;
+    background-color: #f29f67;
+    margin-top: 20px;
+    text-align: center;
+    position: fixed;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 1;
+    color: black;
+}
