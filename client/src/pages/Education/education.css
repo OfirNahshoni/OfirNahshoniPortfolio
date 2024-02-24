@@ -25,6 +25,23 @@
     color: #1e1e2c;
 }
 
+.education .btn-cert1 {
+    background-color: #3b8ff3;
+    color: white;
+    width: 40%;
+    margin: 25px 0px;
+    margin-left: 5px;
+}
+
+.education .btn-cert2 {
+    background-color: #3b8ff3;
+    color: white;
+    width: 40%;
+    margin: 25px 0px;
+    margin-left: 5px;
+}
+
+
 
 /* DARK MODE */
 #dark .education {

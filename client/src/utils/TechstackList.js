@@ -5,6 +5,11 @@ import { FaPython } from "react-icons/fa";
 import { RiReactjsLine } from "react-icons/ri";
 import { DiNodejs } from "react-icons/di";
 import { SiDjango } from "react-icons/si";
+import { FaAws } from "react-icons/fa";
+import { FaRaspberryPi } from "react-icons/fa";
+import { GiProcessor } from "react-icons/gi";
+import { SiExpress } from "react-icons/si";
+
 
 export const TechstackList = [
     {
@@ -41,5 +46,25 @@ export const TechstackList = [
         _id: 7,
         name: 'Django',
         icon: SiDjango,
+    },
+    {
+        _id: 8,
+        name: 'AWS',
+        icon: FaAws,
+    },
+    {
+        _id: 9,
+        name: 'Raspberry PI',
+        icon: FaRaspberryPi,
+    },
+    {
+        _id: 10,
+        name: 'ESP32',
+        icon: GiProcessor,
+    },
+    {
+        _id: 11,
+        name: 'ExpressJS',
+        icon: SiExpress,
     }
 ]

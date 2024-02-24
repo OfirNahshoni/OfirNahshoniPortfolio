@@ -1,7 +1,7 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
 import './home.css'
-import Resume from '../../assests/docs/CV_OfirNahshoni_Software.pdf'
+import Resume from '../../assests/docs/CV_OfirNahshoni.pdf'
 import { useTheme } from '../../context/ThemeContext'
 import { MdDarkMode } from "react-icons/md"
 import { MdLightMode } from "react-icons/md"

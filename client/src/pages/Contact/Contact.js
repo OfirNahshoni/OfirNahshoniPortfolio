@@ -27,9 +27,12 @@ const Contact = () => {
                                     <div className='row contact-icons'>
                                         <h6>
                                             Contact With
-                                            <FaLinkedin className='ms-3' size={25} color={theme === 'light' ? 'darkgreen' : 'lightgreen'} />
-                                            <FaGithub className='ms-3' size={25} color={theme === 'light' ? 'darkgreen' : 'lightgreen'} />
-                                            <FaFacebook className='ms-3' size={25} color={theme === 'light' ? 'darkgreen' : 'lightgreen'} />
+                                            <a href='https://www.linkedin.com/in/ofir-nahshoni-software/' target='blank'>
+                                                <FaLinkedin className='ms-3' size={25} color={theme === 'light' ? 'darkgreen' : 'lightgreen'} />
+                                            </a>
+                                            <a href='https://github.com/OfirNahshoni/' target='blank'>
+                                                <FaGithub className='ms-3' size={25} color={theme === 'light' ? 'darkgreen' : 'lightgreen'} />
+                                            </a>
                                         </h6>
                                     </div>
                                     <div className='row px-3 mb-4'>
