@@ -23,7 +23,7 @@ const Contact = () => {
             }
 
             // send request to backend
-            const response = await axios.post('http://localhost:8080/api/portfolio/send-email', {
+            const response = await axios.post('/api/portfolio/send-email', {
                 name,
                 email,
                 content
