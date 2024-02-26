@@ -12,3 +12,13 @@
   background-color: #100f26;
   color: #f4eee0;
 }
+
+
+/* Mobile View */
+@media (max-width: 600px) {
+  .footer {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+}

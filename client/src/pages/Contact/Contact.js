@@ -1,13 +1,45 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './contact.css'
 import ContactImage from '../../assests/images/contact.jpg'
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
-import { FaFacebook } from "react-icons/fa";
 import { useTheme } from '../../context/ThemeContext';
+import { toast } from 'react-toastify';
+import axios from 'axios';
 
 const Contact = () => {
     const [theme] = useTheme();
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [content, setContent] = useState('');
+
+    // handle submit op
+    const handleSubmit = async (e) => {
+        // prevent the refresh of the page after clicking the submit button (default behavior)
+        e.preventDefault();
+        try {
+            if (!name || !email || !content) {
+                toast.error('Please provide all fields');
+            }
+
+            // send request to backend
+            const response = await axios.post('http://localhost:8080/api/portfolio/send-email', {
+                name,
+                email,
+                content
+            });
+
+            // success validation
+            if (response.data.success) {
+                toast.success(response.data.message);
+            } else {
+                toast.error(response.data.message);
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
     return (
         <>
             <div className='contact' id='contact'>
@@ -42,16 +74,43 @@ const Contact = () => {
                                     </div>
 
                                     <div className='row px-3'>
-                                        <input type='text' name='name' placeholder='Enter your Name' className='mb-3' />
+                                        <input
+                                            type='text'
+                                            name='name'
+                                            placeholder='Enter your Name'
+                                            className='mb-3'
+                                            value={name}
+                                            onChange={(e) => setName(e.target.value)}
+                                        />
                                     </div>
                                     <div className='row px-3'>
-                                        <input type='email' name='email' placeholder='Enter your Email Address' className='mb-3' />
+                                        <input
+                                            type='email'
+                                            name='email'
+                                            placeholder='Enter your Email Address'
+                                            className='mb-3'
+                                            value={email}
+                                            onChange={(e) => setEmail(e.target.value)}
+                                        />
                                     </div>
                                     <div className='row px-3'>
-                                        <textarea type='text' name='msg' placeholder='Enter your Message' className='mb-3' />
+                                        <textarea
+                                            type='text'
+                                            name='content'
+                                            placeholder='Enter your Message'
+                                            className='mb-3'
+                                            value={content}
+                                            onChange={(e) => setContent(e.target.value)}
+                                        />
                                     </div>
                                     <div className='row px-3'>
-                                        <button className='btn-contact' type='submit'>SEND</button>
+                                        <button
+                                            type='submit'
+                                            className='btn-contact'
+                                            onClick={handleSubmit}
+                                        >
+                                            SEND
+                                        </button>
                                     </div>
                                 </div>
                             </div>

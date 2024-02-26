@@ -7,18 +7,15 @@
 .home-content h2 {
     padding: 5px;
     padding-top: 80px;
-    /* margin-left: 150px; */
 }
 
 .home-content h1 {
     padding: 5px;
     padding-top: 20px;
-    /* margin-left: 150px; */
     color: #e0b50f;
 }
 
 .home-buttons {
-    /* margin-left: 150px; */
     margin-top: 20px;
 }
 
@@ -67,4 +64,50 @@
     border-bottom-left-radius: 10px;
     z-index: 1;
     color: black;
+}
+
+
+/* to remove the white space on the right of the screen */
+@media (max-width: 768px) {
+    .container {
+        overflow-x: hidden;
+    }
+}
+
+
+/* Mobile View */
+@media (max-width: 600px) {
+    .home-container {
+        padding: 0;
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    .home-container h1 {
+        font-size: 18px;
+    }
+
+    .home-container h2 {
+        font-size: 24px;
+    }
+
+    .theme-btn {
+        height: 40px;
+        width: 40px;
+    }
+
+    .home-buttons .btn-hire {
+        width: 100px;
+        font-size: 15px;
+    }
+
+    .home-buttons .btn-hire:hover {
+        width: 110px;
+        font-size: 15px;
+    }
+
+    .home-buttons .btn-cv {
+        width: 110px;
+        font-size: 15px;
+    }
 }

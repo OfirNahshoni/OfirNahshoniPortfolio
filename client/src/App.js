@@ -6,12 +6,17 @@ import Projects from "./pages/Projects/Projects";
 import Techstack from "./pages/Techstack/Techstack";
 import ScrollToTop from "react-scroll-to-top";
 import { useTheme } from "./context/ThemeContext";
+import MobileNav from "./components/MobileNav/MobileNav";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [theme] = useTheme();
   return (
     <>
       <div id={theme}>
+        <ToastContainer />
+        <MobileNav />
         <Layout />
         <div className="container">
           <About />
