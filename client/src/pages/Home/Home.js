@@ -1,7 +1,7 @@
 import React from 'react'
 import Typewriter from 'typewriter-effect'
 import './home.css'
-import Resume from '../../assests/docs/CV_OfirNahshoni.pdf'
+import Resume from '../../assests/docs/OfirNahshoniCV.pdf'
 import { useTheme } from '../../context/ThemeContext'
 import { MdDarkMode } from "react-icons/md"
 import { MdLightMode } from "react-icons/md"
@@ -32,7 +32,7 @@ const Home = () => {
             <h1>
               <Typewriter
                 options={{
-                  strings: ['Computer Engineer', 'FullStack Developer', 'Embedded Systems Developer'],
+                  strings: ['Computer Engineer', 'Software Developer'],
                   autoStart: true,
                   loop: true,
                 }}

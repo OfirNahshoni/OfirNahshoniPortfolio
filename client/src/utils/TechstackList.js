@@ -14,56 +14,46 @@ import { SiExpress } from "react-icons/si";
 export const TechstackList = [
     {
         _id: 1,
-        name: 'HTML',
-        icon: BsFiletypeHtml,
-    },
-    {
-        _id: 2,
-        name: 'CSS',
-        icon: BsFiletypeCss,
-    },
-    {
-        _id: 3,
         name: 'JavaScript',
         icon: TbBrandJavascript,
     },
     {
-        _id: 4,
+        _id: 2,
         name: 'Python',
         icon: FaPython,
     },
     {
-        _id: 5,
+        _id: 3,
         name: 'ReactJS',
         icon: RiReactjsLine,
     },
     {
-        _id: 6,
+        _id: 4,
         name: 'NodeJS',
         icon: DiNodejs,
     },
     {
-        _id: 7,
+        _id: 5,
         name: 'Django',
         icon: SiDjango,
     },
     {
-        _id: 8,
+        _id: 6,
         name: 'AWS',
         icon: FaAws,
     },
     {
-        _id: 9,
+        _id: 7,
         name: 'Raspberry PI',
         icon: FaRaspberryPi,
     },
     {
-        _id: 10,
+        _id: 8,
         name: 'ESP32',
         icon: GiProcessor,
     },
     {
-        _id: 11,
+        _id: 9,
         name: 'ExpressJS',
         icon: SiExpress,
     }

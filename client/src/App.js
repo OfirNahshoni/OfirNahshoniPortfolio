@@ -9,6 +9,7 @@ import { useTheme } from "./context/ThemeContext";
 import MobileNav from "./components/MobileNav/MobileNav";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { IoIosArrowUp } from "react-icons/io";
 
 function App() {
   const [theme] = useTheme();
@@ -33,11 +34,13 @@ function App() {
       </div>
       <ScrollToTop
         smooth
+        component={<IoIosArrowUp />}
         color="#1e1e2c"
         style={{
-          backgroundColor: '#f29f67',
-          borderRadius: '50px',
-          fontWeight: 'bold'
+          backgroundColor: '#1b92c9',
+          borderRadius: '20px',
+          fontSize: '24px',
+          height: '42px',
         }}
       />
     </>

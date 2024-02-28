@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import './projects.css'
 import ProjectView from './ProjectView'
-
-import Spin from 'react-reveal/Spin'
+import Jump from 'react-reveal/Jump'
 import { ProjectsList } from '../../utils/ProjectsList'
 
 const Projects = () => {
@@ -29,7 +28,7 @@ const Projects = () => {
                 </p>
 
                 <div id='ads' className='row'>
-                    <Spin>
+                    <Jump>
                         {ProjectsList.map((project) => (
                             <div className='col-md-4' key={project.id}>
                                 <div className='card rounded'>
@@ -53,7 +52,7 @@ const Projects = () => {
                                 </div>
                             </div>
                         ))}
-                    </Spin>
+                    </Jump>
                 </div>
             </div>
 

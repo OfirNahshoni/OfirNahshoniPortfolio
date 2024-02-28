@@ -25,8 +25,8 @@
 }
 
 .sidebar-toggle-icons p svg {
-    background-color: #f29f67;
-    color: white;
+    background-color: #1b92c9;
+    color:  white;
     margin-top: 30px;
 }
 
@@ -37,4 +37,10 @@
         display: none;
         
     }
+}
+
+
+/* Dark Mode */
+#dark .sidebar-toggle-icons p svg {
+    color:  black;
 }

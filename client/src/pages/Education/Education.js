@@ -29,7 +29,7 @@ const Education = () => {
                         icon={<MdSchool />}
                     >
                         <h3 className="vertical-timeline-element-title">BSc Computer Engineering</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Ruppic Academic Center, ISR</h4>
+                        <h4 className="vertical-timeline-element-subtitle">Ruppin Academic Center, ISR</h4>
                         <p>
                             Final Project - 98. GPA - 82.
                         </p>
@@ -71,7 +71,7 @@ const Education = () => {
                         iconStyle={{ background: '#138781', color: '#fff' }}
                         icon={<MdSchool />}
                     >
-                        <h3 className="vertical-timeline-element-title">2 FPGA Kackathons</h3>
+                        <h3 className="vertical-timeline-element-title">2 FPGA Hackathons</h3>
                         <h4 className="vertical-timeline-element-subtitle">RISC-V processor for AI computational accelerator</h4>
                     </VerticalTimelineElement>
                 </VerticalTimeline>

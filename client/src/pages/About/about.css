@@ -6,14 +6,17 @@
 }
 
 .about-img {
-    margin: auto;
+    display: flex; /* Enable Flexbox */
+    align-items: center; /* Vertically center the child elements */
+    justify-content: center; /* Horizontally center the child elements */
 }
 
 .about-img img {
-    border-radius: 10px;
-    width: 100%;
-    height: 500px;
+    border-radius: 50%;
+    width: 80%; /* Adjust width as needed */
+    max-height: 450px; /* Maximum height */
 }
+
 
 .about-content {
     display: flex;
